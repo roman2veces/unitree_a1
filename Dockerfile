@@ -2,7 +2,7 @@ FROM ros:foxy-ros1-bridge
 
 RUN sudo apt update 
 # libglib2.0-dev is a LCM dependency 
-RUN sudo apt install -y git wget unzip libglib2.0-dev 
+RUN sudo apt install -y git wget unzip libglib2.0-dev iputils-ping nano ros-foxy-teleop-twist-keyboard 
 
 WORKDIR /
 RUN mkdir /home/mistlab
